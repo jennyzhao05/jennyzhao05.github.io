@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jenny Zhao - Tuition Analysis Project</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: white;
+      color: #333;
+      line-height: 1.6;
+      padding: 2rem;
+    }
+    .center {
+      text-align: center;
+    }
+    img {
+      max-width: 90%;
+      height: auto;
+      display: block;
+      margin: 2rem auto;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+    a {
+      color: #3273dc;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="section">
+    <div class="container">
+      <h1 class="title is-2 center">Statewide University Tuition & Rating Analysis</h1>
+      <h2 class="subtitle is-4 center">Exploring Tuition Costs vs. Educational Quality</h2>
+
+      <p>
+        This project investigates whether higher tuition costs at private universities in the United States correlate
+        with better educational quality. The goal was to provide data-driven insights that help prospective students
+        make more informed decisions beyond a school’s price tag. By analyzing multiple institutional factors—such as
+        academics, resources, outcomes, selectiveness, and value—the project seeks to clarify whether “college is just
+        a business” or if tuition genuinely reflects educational excellence.
+      </p>
+
+      <br />
+      <p>
+        Data were collected through CollegeSimply using web scraping methods, yielding 1,299 entries after extensive
+        cleaning. The dataset included variables such as tuition, rankings, and institutional characteristics. To
+        reduce potential biases from third-party data processing and unequal regional representation, each attribute
+        was standardized on a 0–10 scale. This facilitated quantitative comparison across institutions using radar
+        charts, where a university’s overall educational score was represented by the area of its radar polygon.
+      </p>
+
+      <br />
+      <p>
+        After calculating each institution’s education score, the team applied linear regression analysis to assess the
+        relationship between tuition (x-axis) and educational quality (y-axis). The regression model produced a positive
+        correlation (R² = 0.6273), indicating a moderate relationship between higher tuition and higher educational
+        quality, though notable outliers existed. Some universities with lower tuition achieved comparable or superior
+        education scores, suggesting that tuition alone is not a definitive indicator of quality.
+      </p>
+
+      <br />
+      <p>
+        The study concludes that while tuition often aligns with educational quality, numerous external factors—such as
+        location, institutional type, and available financial aid—also play significant roles. Future work will expand
+        this analysis by incorporating outcomes such as graduation rates, employment data, and post-graduation salaries
+        to more comprehensively evaluate whether financial investment in education truly predicts long-term success.
+      </p>
+
+      <figure class="image center">
+        <img src="chart.png" alt="Radar and regression charts visualizing tuition vs educational quality" />
+        <figcaption class="has-text-grey center">
+          Visualization: Radar charts and linear regression comparing tuition and educational quality.
+        </figcaption>
+      </figure>
+
+      <p class="center">
+        <a href="main.html">← Back to Home</a>
+      </p>
+    </div>
+  </section>
+
+  <footer class="footer has-text-centered">
+    <p>© 2025 Jenny Zhao</p>
+  </footer>
+</body>
+</html>
