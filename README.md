@@ -7,3 +7,7 @@ Data were collected through CollegeSimply using web scraping methods, yielding 1
 After calculating each institution’s education score, the team applied linear regression analysis to assess the relationship between tuition (x-axis) and educational quality (y-axis). The regression model produced a positive correlation (R² = 0.6273), indicating a moderate relationship between higher tuition and higher educational quality, though notable outliers existed. Some universities with lower tuition achieved comparable or superior education scores, suggesting that tuition alone is not a definitive indicator of quality.
 
 The study concludes that while tuition often aligns with educational quality, numerous external factors—such as location, institutional type, and available financial aid—also play significant roles. Future work will expand this analysis by incorporating outcomes such as graduation rates, employment data, and post-graduation salaries to more comprehensively evaluate whether financial investment in education truly predicts long-term success.
+
+<p align="center">
+  <img src="chart.png" alt="Radar Chart" width="400">
+</p>
