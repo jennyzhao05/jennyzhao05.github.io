@@ -1,2 +1,9 @@
-# jennyzhao05.github.io
-Jenny's personal website
+Project Summary – Nationwide University Statistics Comparison
+
+This project investigates whether higher tuition costs at private universities in the United States correlate with better educational quality. The goal was to provide data-driven insights that help prospective students make more informed decisions beyond a school’s price tag. By analyzing multiple institutional factors—such as academics, resources, outcomes, selectiveness, and value—the project seeks to clarify whether “college is just a business” or if tuition genuinely reflects educational excellence.
+
+Data were collected through CollegeSimply using web scraping methods, yielding 1,299 entries after extensive cleaning. The dataset included variables such as tuition, rankings, and institutional characteristics. To reduce potential biases from third-party data processing and unequal regional representation, each attribute was standardized on a 0–10 scale. This facilitated quantitative comparison across institutions using radar charts, where a university’s overall educational score was represented by the area of its radar polygon.
+
+After calculating each institution’s education score, the team applied linear regression analysis to assess the relationship between tuition (x-axis) and educational quality (y-axis). The regression model produced a positive correlation (R² = 0.6273), indicating a moderate relationship between higher tuition and higher educational quality, though notable outliers existed. Some universities with lower tuition achieved comparable or superior education scores, suggesting that tuition alone is not a definitive indicator of quality.
+
+The study concludes that while tuition often aligns with educational quality, numerous external factors—such as location, institutional type, and available financial aid—also play significant roles. Future work will expand this analysis by incorporating outcomes such as graduation rates, employment data, and post-graduation salaries to more comprehensively evaluate whether financial investment in education truly predicts long-term success.
